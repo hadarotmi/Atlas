@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF' crossorigin='anonymous'>
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="country.css">
+  <script type="module" defer src="js_country/app_country.js"></script>
+  <link rel="shortcut icon" href="https://www.pngkey.com/png/full/251-2513526_icon-small-globe-icon.png" type="image/x-icons">
+
+  <title>Atlas</title>
+</head>
+
+<body>
+  <header class="container-fluid  bg-dark sticky-top ">
+    <div class="container d-flex justify-content-between p-3 ">
+     
+      <nav id="nav_open" class="align-items-center">
+        <a id="id_home" class="text-warning display-6 px-3" href="#"><b>HOME</b></a>
+        <a id="id_israel" href="#">ISRAEL</a>
+        <a id="id_france" href="#">FRANCE</a>
+        <a id="id_usa" href="#">USA</a>
+        <a id="id_thailand" href="#">THAILAND</a>
+      </nav> 
+      <div>
+        <i id="burger_btn" class="fa fa-bars" aria-hidden="true"></i>
+        <i id="close_btn" class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <div class="d-flex">
+        <input type="text" id="input_search" placeholder="Select country..." name="cat" list="cat">
+        <datalist id="cat">
+
+        </datalist>
+        <button id="btn_search" class="btn btn-outline-warning ">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid ">
+    <div id="show" class="center text-start " >
+    </div>
+  </main>
+ 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

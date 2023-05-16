@@ -1,0 +1,195 @@
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px black;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: rgba(125, 106, 0, 0.689);
+border-radius: 20px;
+}
+
+body {
+  background-image: url(images/cover.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px !important;
+}
+
+.img-fluid {
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+main {
+  margin-top: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 4px 8px;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  transition: 1000ms;
+
+}
+
+a:hover {
+  color: gold;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, gold 0px 0px 20px, gold 0px 0px 30px, gold 0px 0px 40px, gold 0px 0px 50px, gold 0px 0px 75px;
+
+}
+
+
+#id_home:hover {
+  color: white !important;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, gold 0px 0px 20px, gold 0px 0px 30px, gold 0px 0px 40px, gold 0px 0px 50px, gold 0px 0px 75px;
+}
+
+h2 {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 50px !important;
+}
+
+.map {
+  height: 150px;
+}
+
+
+.column {
+  flex: 24.8%;
+  max-width: 24.8%;
+  padding: 0 4px;
+}
+
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+  background: black;
+  width: 80%;
+}
+
+.image,
+.image-mobile {
+  margin: 8px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  -ms-interpolation-mode: bicubic;
+}
+
+header #burger_btn,
+header #close_btn {
+  display: none;
+  text-align: right;
+  color: gold;
+  font-size: 48px;
+  cursor: pointer;
+
+}
+.flag{
+  width: 24%;
+  transition: 1000ms;
+}
+
+.flag:hover{
+  transform: scale(0.95);
+  cursor: pointer;
+  filter: sepia(0.7);
+
+}
+
+.country{
+  width: 900px;
+}
+
+@media(max-width:1030px) {
+  .column {
+    flex: 90%;
+    max-width: 98%;
+    text-align: center;
+  }
+
+  .image {
+    display: none;
+  }
+}
+
+@media(max-width:740px) {
+  header #close_btn {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    display: block;
+    width: 140px;
+    background: black;
+
+  }
+
+  header nav a {
+    display: block;
+    padding: 16px;
+    color: white;
+    border-bottom: 1px solid gold;
+    transition: 1000ms;
+  }
+
+  header nav a:hover {
+    background: gold;
+    color: black;
+
+    transform:none
+  }
+
+
+
+  .country{
+    width: 400px;
+    padding: 4px;
+    text-align: center;
+    align-self: center;
+  }
+
+  .img-fluid ,#id_not_found{
+    height: 180px !important
+  }
+  .flag{
+    width: 90%;
+  }
+
+}
+
+@media (min-width:780px) {
+  header nav {
+    display: block !important;
+  }
+
+  header #burger_btn,
+  header #close_btn {
+    display: none !important;
+  }
+}
